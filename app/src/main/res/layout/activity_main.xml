@@ -8,30 +8,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/inputAltura"
-        android:layout_width="319dp"
-        android:layout_height="50dp"
-        android:hint="Altura"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/inputPeso"
-        android:layout_width="319dp"
-        android:layout_height="50dp"
-        android:hint="Peso"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,13 +30,49 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputIdade"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:hint="Idade"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.32" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputPeso"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:hint="Peso"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputAltura"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:hint="Altura"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
 
     <Button
         android:id="@+id/btnCalcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calcular"
+        android:text="Calcular e Salvar"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:onClick="mostrarResultado"
@@ -70,5 +82,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.774" />
+
+    <Button
+        android:id="@+id/btnVerHistorico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Histórico"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="verHistorico"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular"
+        app:layout_constraintVertical_bias="0.1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
